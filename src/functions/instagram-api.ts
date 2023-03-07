@@ -10,7 +10,7 @@ export default function InstagramApi() {
 
   // If the access token is not already present in the URL, redirect the user to the authorization URL
   if (!getAccessToken()) {
-    const authorizationUrl = `https://api.instagram.com/oauth/authorize/?client_id=${clientID}&redirect_uri=${redirectURI}&response_type=token`;
+    const authorizationUrl = `https://api.instagram.com/oauth/authorize/?client_id=${clientID}&redirect_uri=${redirectURI}&scope=user_profile,user_media&response_type=code`;
     window.location.href = authorizationUrl;
   }
 
