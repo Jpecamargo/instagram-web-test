@@ -1,5 +1,5 @@
 export default function InstagramApi() {
-  const clientID = "741667847546702";
+  const clientID = "736378387955871";
   const redirectURI = "https://instagram-api-v2e0.onrender.com/";
 
   // Get the access token from the URL fragment
